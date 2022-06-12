@@ -28,8 +28,8 @@ def add(value1, value2):
     '''\
 이 함수는 매개변수 value1과 value2를 더한 값을 return하는 함수입니다.\
 '''
-        result = value1 + value2
-        return result
+    result = value1 + value2
+    return result
 
 help(add)
 

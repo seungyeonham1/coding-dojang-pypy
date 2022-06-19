@@ -1,6 +1,4 @@
 
-
-
 price = int(input())
 coupon = input()
 

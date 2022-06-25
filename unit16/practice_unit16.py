@@ -19,7 +19,7 @@
 # 감소폭 reversed 사용
 # for 변수 in reversed(range(횟수))
 # for 변수 in reversed(시작, 끝)
-# for 변수 in reversed(시작 끝, 증가폭)
+# for 변수 in reversed(시작, 끝, 증가폭)
 
 #for i in range(5, 12):
 #    print('Hello, wolrd', i)
@@ -62,3 +62,7 @@
 #for letter in reversed('썬이파 의준장'):
 #    print(letter, end=' ')
 
+
+
+for i in range(20, 10):
+    print(i)

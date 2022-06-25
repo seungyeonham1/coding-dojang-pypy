@@ -48,7 +48,7 @@
 # import random = 랜덤 함수를 호출
 
 
-import random 
+#import random 
 
 #i = 0
 #while i != 6:
@@ -61,9 +61,23 @@ import random
 
 
 
-i = 0
-dice = [1, 2, 3, 4, 5, 6]
+#i = 0
+#dice = [1, 2, 3, 4, 5, 6]
 
-while i != 6:
-    i = random.choice(dice)
-    print(i)
+#while i != 6:
+#    i = random.choice(dice)
+#    print(i)
+
+
+
+# while 반복문 무한 루프 
+
+repeat_count = 0
+while True:
+    print('mint choko {0}'.format(repeat_count+1))
+    repeat_count +=1
+
+
+    if repeat_count == 50:
+        break
+

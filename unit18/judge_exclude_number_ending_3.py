@@ -11,9 +11,15 @@ start, stop = map(int, input().split())
 i = start
 
 while True:
-    if i % 10 == 3: # i값을 10으로 나눈 나머지가 3이라면
+    if not 1 <= start <= 200:
+        print('start값 범위가 올바르지 않음, 입력값:{0}'.format(start))
+        break
+    elif not 10 <= stop <= 200:
+        print('stop값 범위가 올바르지 않음, 입력값:{0}'.format(stop))
+        break
+    elif i % 10 == 3: # i값을 10으로 나눈 나머지가 3이라면
         i += 1 # i 값이 1만큼 증가하며
-    if i > stop: # i가 stop 값보다 크게되면
+    elif i > stop: # i가 stop 값보다 크게되면
         break # 멈춘다
     print(i, end= ' ')
     i += 1

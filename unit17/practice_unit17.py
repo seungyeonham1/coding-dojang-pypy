@@ -5,10 +5,10 @@
 #   변화식
 
 
-# i = 0
-# while i < 10:             # 조건식
-#    print('Hello, python') # 반복할 코드
-#    i += 1                 # 변화식
+i = 0
+while i < 10:             # 조건식
+    print('Hello, python') # 반복할 코드
+    i += 1                 # 변화식
 
 
 
@@ -44,6 +44,7 @@
 
 
 
+# 파이썬에서 난수를 생성하려면 random 모듈이 필요함
 # import 모듈 = 함수를 호출
 # import random = 랜덤 함수를 호출
 
@@ -54,6 +55,24 @@
 #while i != 6:
 #    i = random.randint(1,6)
 #    print(i)
+
+import random
+
+dice = list(range(1,6,1))
+
+COUNT = 0
+i = 0
+while i != 6:
+    COUNT = COUNT + 1
+    print('주사위 횟수 :', COUNT)
+    i = random.randint(1,6)
+    print(i)
+
+    if i == 6:
+        print('숫자 6이 나왔습니다.')
+
+
+
 
 
 # random.choice
@@ -72,12 +91,12 @@
 
 # while 반복문 무한 루프 
 
-repeat_count = 0
-while True:
-    print('mint choko {0}'.format(repeat_count+1))
-    repeat_count +=1
+#repeat_count = 0
+#while True:
+#    print('mint choko {0}'.format(repeat_count+1))
+#    repeat_count +=1
 
 
-    if repeat_count == 50:
-        break
+#    if repeat_count == 50:
+#        break
 

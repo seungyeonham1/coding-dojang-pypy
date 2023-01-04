@@ -6,6 +6,8 @@
 # for i in range(5) # range(5)는 0,1,2,3,4를 생성하는 이터레이터, 이터레이터는 반복 가능한 개체
 #    print(i)
 
+# 반복문 i를 루프 인덱스라고 부름, i는 index의 첫 머리 글자를 따서 주로 사용함
+
 
 # for문 시작하는 숫자와 끝나는 숫자 지정
 # for 변수 in range(시작,끝)
@@ -21,8 +23,8 @@
 # for 변수 in reversed(시작, 끝)
 # for 변수 in reversed(시작, 끝, 증가폭)
 
-#for i in range(5, 12):
-#    print('Hello, wolrd', i)
+for i in range(5, 12):
+    print('Hello, wolrd', i)
 
 #for i in range(0, 10, 2):
 #    print('Hello, world', i)
@@ -53,16 +55,16 @@
 
 # 문자열을 꺼내면서 반복하는 출력
 
-#for letter in 'Valheim':
-#    print(letter, end=' ')
+for letter in 'Valheim':
+    print(letter, end=' ')
 
 
 # reversed를 사용한 문자열을 뒤집어서 출력 
 
-#for letter in reversed('썬이파 의준장'):
-#    print(letter, end=' ')
+for letter in reversed('썬이파 의준장'):
+    print(letter, end=' ')
 
 
 
-for i in range(20, 10):
-    print(i)
+#for i in range(20, 10):
+#    print(i)

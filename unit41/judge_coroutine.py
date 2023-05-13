@@ -14,11 +14,12 @@ def calc():
         elif operator == '/':
             sum = int(num1) / int(num2)
         
+
+       
 expressions = input().split(', ')
 
 c = calc()
 next(c)
-
 
 for e in expressions:
     print(c.send(e))

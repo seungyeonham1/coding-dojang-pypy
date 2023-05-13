@@ -230,3 +230,29 @@ print(x)
 x = co.send(2)
 print(x)
 co.send(3)
+
+
+# 코루틴 초기화를 자동화
+
+def coroutine(func):  # 코루틴 초기화 데코레이터
+    def init(*args, **kwargs):
+        co = func(*args, **kwargs) # 코루틴 객체 생성
+        next(co)  # next 호출
+        return co # 코루틴 객체 반환
+    return init
+
+@coroutine # 코루틴 초기화 데코레이터 지정
+def sum_coroutine(): 
+    total = 0
+    while True:
+        x = (yield total)
+        total += x
+
+co = sum_coroutine() # 코루틴 객체를 생성한 뒤, 바로 사용
+
+print(co.send(1))
+print(co.send(2))
+print(co.send(3))
+
+# 코루틴의 이점
+# 코루틴은 시분할 방식 멀티태스킹, 동기화를 위한 락이 필요하지 않음.
